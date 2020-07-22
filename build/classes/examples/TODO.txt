@@ -1,0 +1,35 @@
+Question: 
+Create an address book application in Java. The application should have feature of managing contact detail of people including the fields like name, address, telephone, mobile, email, etc. (6 marks). The application should have the feature of searching based on any field criteria (6 marks). Duplicate checking should be available in the fields like mobile, email (6 marks). The application should provide the contact detail in tabular and printer friendly format (6 marks). Demonstrate the use of suitable data structures to achieve above-mentioned functional requirements wherever possible (4 marks). Implement the unit testing frameworks like JUnit to perform unit testing for at least 3 functionalities with in this application (6 marks). Students are encouraged to use GUI frameworks like Swing while building the application (6 marks).
+
+
+[ ] Create firstName input field
+[ ] Create lastName input field
+[ ] Create address input field
+[ ] Create telephone input field
+[ ] Create mobile input field
+[ ] Create email input field
+
+
+
+
+
+
+
+
+
+
+
+  private void saveBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveBtnMouseClicked
+        // TODO: get input text from all the inputs/textAreas
+        String name = nameTextField.getText().trim();
+        Integer telephoneNumber = Integer.parseInt(telephoneNumberTextField.getText().trim());
+        String address = addressTextField.getText().trim();
+
+        System.out.println("Name: "+ name);
+        System.out.println("telephoneNumber: "+ telephoneNumber);
+        System.out.println("Address: "+ address);
+
+
+
+        // TODO: save the info to database
+    }//GEN-LAST:event_saveBtnMouseClicked
